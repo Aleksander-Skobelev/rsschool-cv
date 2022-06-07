@@ -17,6 +17,10 @@ Hard skills:
 5. GULP
 6. Figma, Adobe XD, Photoshop
 
+Portfolio:
+[Link](http://aleksander-skobelev.github.io/exam/exam/)
+
 Education: Beetroot Academy 2021
 
 Language: english A1
+ukrainian native
