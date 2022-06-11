@@ -52,6 +52,13 @@ body{
     text-decoration: none;
     color: #000000;
     cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.header__nav-link:hover,
+.header__nav-link:active {
+    border-bottom-color: #fed400;
+    transition: 2s ease;
 }
 
 .aside {
