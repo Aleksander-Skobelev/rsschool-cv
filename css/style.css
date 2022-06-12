@@ -15,11 +15,38 @@ body {
     font-size: 20px;
 }
 
+@media (min-width: 660px) and (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    } 
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+
+    code {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 660px) {
+
+    code {
+        font-size: 14px;
+    }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+
+    code {
+        font-size: 13px;
+    }
+}
+
 .header .container,
 .main .container {
     display: flex;
 }
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 660px) {
 
     .header .container {
         flex-wrap: wrap-reverse;
@@ -37,7 +64,7 @@ body {
     background-color: #e1e1e1;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 660px) {
 
     .header__image {
         width: 100%;
@@ -63,7 +90,7 @@ body {
     text-align: center;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 660px) {
 
     .header__content {
         width: 100%;
@@ -96,7 +123,7 @@ body {
     background-color: #e1e1e1;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 660px) {
     
     .aside {
         width: 100%;
@@ -108,6 +135,16 @@ body {
 .aside__edu-list,
 .aside__lang-list {
     margin: 0px 20px;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+
+    .aside__contacts-list,
+    .aside__skills-list,
+    .aside__edu-list,
+    .aside__lang-list {
+        margin: 0;
+    }
 }
 
 .aside__contacts-item,
@@ -185,7 +222,7 @@ body {
     width: 60%;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 660px) {
     .main__content {
         width: 100%;
     }
