@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    } 
+}
+
+@media (min-width: 660px) and (max-width: 800px) {
+
+    code {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 660px) {
+
+    code {
+        font-size: 14px;
+    }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+
+    code {
+        font-size: 13px;
+    }
+}
+
+.header .container,
+.main .container {
+    display: flex;
+}
+@media (min-width: 320px) and (max-width: 660px) {
+
+    .header .container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .main .container {
+        flex-wrap: wrap;
+    }
+}
+
+.header__image {
+    width: 40%;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #e1e1e1;
+}
+
+@media (min-width: 320px) and (max-width: 660px) {
+
+    .header__image {
+        width: 100%;
+    }
+}
+
+.header__image img {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.title {
+    margin: 30px 0px;
+    padding: 10px 40px;
+    background-color: #fed400;
+}
+
+.header__content {
+    width: 60%;
+    padding-top: 30px;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 660px) {
+
+    .header__content {
+        width: 100%;
+    }
+}
+
+.header__nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.header__nav-link:hover,
+.header__nav-link:active {
+    border-bottom-color: #fed400;
+    transition: 2s ease;
+}
+
+.aside {
+    width: 40%;
+    background-color: #e1e1e1;
+}
+
+@media (min-width: 320px) and (max-width: 660px) {
+    
+    .aside {
+        width: 100%;
+    }
+}
+
+.aside__contacts-list,
+.aside__skills-list,
+.aside__edu-list,
+.aside__lang-list {
+    margin: 0px 20px;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+
+    .aside__contacts-list,
+    .aside__skills-list,
+    .aside__edu-list,
+    .aside__lang-list {
+        margin: 0;
+    }
+}
+
+.aside__contacts-item,
+.aside__skills-item,
+.aside__edu-item {
+    position: relative;
+    padding-left: 35px;
+    margin: 20px;
+    list-style: none;  
+    word-break: break-all;
+}
+
+.aside__contacts-item a,
+.aside__edu-item a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.aside__contacts-item::before,
+.aside__skills-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 23px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item__location::before {
+    background-image: url(../image/location.svg);
+}
+
+.item__mail::before {
+    background-image: url(../image/mail.svg);
+}
+
+.item__phone::before {
+    background-image: url(../image/phone.svg);
+}
+
+.item__html::before {
+    background-image: url(../image/html5.svg);
+    width: 25px;
+    height: 32px;
+}
+
+.item__css::before {
+    background-image: url(../image/css3.svg);
+    width: 25px;
+    height: 32px;
+}
+
+.item__js::before {
+    background-image: url(../image/js.svg);
+    width: 25px;
+    height: 27px;
+}
+
+.item__gulp::before {
+    background-image: url(../image/gulp.svg);
+    width: 25px;
+    height: 50px;
+}
+
+.item__github::before {
+    background-image: url(../image/github.svg);
+    width: 28px;
+    height: 28px;
+}
+
+.main__content {
+    width: 60%;
+}
+
+@media (min-width: 320px) and (max-width: 660px) {
+    .main__content {
+        width: 100%;
+    }
+}
+
+.about__descr {
+    margin: 40px;
+}
+
+code {
+    white-space: pre;
+}
+
+.projects__link {
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.projects__image {
+    width: 100%;
+    min-width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: #fed400;
+    padding: 20px 40px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
